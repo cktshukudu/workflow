@@ -99,7 +99,7 @@ $mail->Subject = 'Email from Task Manage'; // Mail subject
 $bodyContent = "<p>Hi there,<br><br>You have a task that is <strong>$status</strong>.<br>Please log in 
                 <a href='https://workflow-application.herokuapp.com/index.php' target='_blank'>here</a> 
                 and make approriate changes to this reference.<br><br>Regards.</p>"; 
-$bodyContent .= "<p>This email is sent by the <b>Admin</b></p>"; 
+$bodyContent .= "<p>This email is sent by the <b>JBS Team Lead</b></p>"; 
 $mail->Body    = $bodyContent; 
 
 // Send email 

@@ -83,14 +83,14 @@ $mail = new PHPMailer();
 $mail->isSMTP();                                   // Set mailer to use SMTP 
 $mail->Host = 'smtp.gmail.com';                    // Specify main and backup SMTP servers 
 $mail->SMTPAuth = true;                            // Enable SMTP authentication 
-$mail->Username = 'terror.tivani@gmail.com';       // SMTP username 
-$mail->Password = 'hqyrjsfttuvrsapq';              // SMTP password 
+$mail->Username = 'devtecspac@gmail.com';       // SMTP username 
+$mail->Password = 'nijexjqbulxjtbnz';              // SMTP password 
 $mail->SMTPSecure = 'tls';                         // Enable TLS encryption, `ssl` also accepted 
 $mail->Port = 587 ;                                // TCP port to connect to 
  
 // Sender info 
 
-$mail->setFrom('terror.tivani@gmail.com', 'admin'); 
+$mail->setFrom('devtecspac@gmail.com', 'admin'); 
 $mail->addReplyTo('reply@example.com', 'admin');
  
 // Add a recipient 
@@ -115,9 +115,9 @@ $sql = "SELECT task_id, t_email, t_end_time FROM task_info
         $date = date('Y-m-d H:i:s');
 
         if ($t_email == true) {
-
+		
           $bodyContent = "<p>Hi there,<br><br>A new task has been added and it is <strong>DUE</strong> @<strong>$end_time</strong>.
-          <br>Please log in <a href='https://workflow-application.herokuapp.com/index.php' target='_blank'>here</a> 
+          <br>Please log in <a href='	https://workflow.herokuapp.com/' target='_blank'>here</a> 
           and make approriate changes to this reference.<br><br>Regards.</p>"; 
           $bodyContent .= "<p>This email is sent by the <b>Admin</b></p>"; 
           $mail->Body   = $bodyContent; 

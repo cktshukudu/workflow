@@ -5,26 +5,12 @@ class Admin_Class
 
 /* -------------------------set_database_connection_using_PDO---------------------- */
 
-public function __construct()
-{ 
-	$host_name='localhost';
-	$user_name='root';
-	$password='';
-	$db_name='workflow-db';
-
-	try{
-		$connection=new PDO("mysql:host={$host_name}; dbname={$db_name}", $user_name,  $password);
-		$this->db = $connection; // connection established
-	} catch (PDOException $message ) {
-		echo $message->getMessage();
-	}
-}
 // public function __construct()
 // { 
-// 	$host_name='us-cdbr-east-06.cleardb.net';
-// 	$user_name='bc8a2b80412599';
-// 	$password='7e8cb8e1';
-// 	$db_name='heroku_af56457955d7054';
+// 	$host_name='localhost';
+// 	$user_name='root';
+// 	$password='';
+// 	$db_name='workflow-db';
 
 // 	try{
 // 		$connection=new PDO("mysql:host={$host_name}; dbname={$db_name}", $user_name,  $password);
@@ -33,6 +19,20 @@ public function __construct()
 // 		echo $message->getMessage();
 // 	}
 // }
+public function __construct()
+{ 
+	$host_name='us-cdbr-east-06.cleardb.net';
+	$user_name='b36e101410c794';
+	$password='cc1b1634';
+	$db_name='heroku_75a61d3ca4c03a1';
+
+	try{
+		$connection=new PDO("mysql:host={$host_name}; dbname={$db_name}", $user_name,  $password);
+		$this->db = $connection; // connection established
+	} catch (PDOException $message ) {
+		echo $message->getMessage();
+	}
+}
 
 /* ---------------------- test_form_input_data ----------------------------------- */
 	
